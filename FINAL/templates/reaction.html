@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Reaction Test
+{% endblock %}
+
+{% block main %}
+<p id="timer">Time: </p>
+
+<script type="text/javascript" src="/static/game.js"></script>
+<script type="text/javascript" src="/static/reaction.js"></script>
+<button class="btn btn-primary" onclick="RunReactionTest()">Go!</button>
+<div id="can"></div>
+
+<input type="hidden" name="reaction_time" value=diff_time />
+{% endblock %}
